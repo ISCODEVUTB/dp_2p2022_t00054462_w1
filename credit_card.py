@@ -50,6 +50,8 @@ class CreditCard:
     def set_zip_code(self, zip_code: int) -> None:
         self.zip_code = zip_code
 
-    
     def validate_Card(self) -> bool:
         return True
+
+    def toString(self) -> str:
+        return f"Card number: {self.card_number}, Expiry date: {self.expiry_day}/{self.expiry_month}/{self.expiry_year}, CVS: {self.csv}, Zip code: {self.zip_code}"

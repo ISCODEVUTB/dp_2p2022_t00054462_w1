@@ -54,4 +54,4 @@ class Package(ABC):
     
     @abstractmethod
     def toString(self) -> str:
-        return f"Id: {self.ID}, Code: {self.code}, Weight: {self.weight}, Description: {self.description}, Customer: {self.customer}"
+        return f"Id: {self.ID}, Code: {self.code}, Weight: {self.weight}, Description: {self.description}, Customer: {self.customer.name} {self.customer.last_name}"
