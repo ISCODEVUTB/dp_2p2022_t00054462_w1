@@ -1,4 +1,4 @@
-from .enumerations import InvoiceStatus
+from enumerations import InvoiceStatus
 from order import Order
 from customer import Customer
 from enumerations import PaymentMethodsTypes
