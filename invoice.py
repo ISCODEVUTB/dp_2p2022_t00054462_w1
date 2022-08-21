@@ -70,7 +70,7 @@ class Invoice:
     def set_payment_method(self, payment_method: PaymentMethodsTypes) -> None:
         self.discount = payment_method
 
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"ID: {self.ID}, status: {self.status}, Client: {self.client.name} {self.client.last_name}, Price: {self.price}, Tax: {self.tax}, Discount: {self.discount}, Payment method: {self.payment_method}"
     
 

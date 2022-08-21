@@ -50,5 +50,5 @@ class Location:
     def set_zip_code(self, zip_code: int) -> None:
         self.zip_code = zip_code
 
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Country: {self.country}, State: {self.state}, City: {self.city}, Address Line 1: {self.address_line1}, Address Line 2: {self.address_line2}, Zip Code: {self.zip_code}"

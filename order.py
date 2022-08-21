@@ -67,5 +67,5 @@ class Order:
     def set_location(self, location: Location) -> None:
         self.location = location
         
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Package id: {self.package.ID}, Is paid: {self.is_paid}, Price: {self.price}, Reciever: {self.receiver.name} {self.receiver.last_name}, Sender: {self.sender.name} {self.sender.last_name}, Status: {self.status}, Location: {self.location.country} - {self.location.state} - {self.location.city}"

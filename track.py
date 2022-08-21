@@ -43,7 +43,7 @@ class Track:
     def set_status(self, status: TrackStatus) -> None:
         self.status = status
 
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Id: {self.ID}, Type: {self.type}, Max weight: {self.max_weight}, Current weight: {self.current_weight}, Status: {self.status}"
 
     

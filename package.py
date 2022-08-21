@@ -19,6 +19,20 @@ class Package(ABC):
         self.customer = customer
 
     def get_id(self) -> str:
+        """Descripción de la función
+
+        Parameters
+        ----------
+        parametro_1 : tipo
+            Descripción del parametro
+        parametro_2 : tipo
+            Descripción del parametro
+
+        Returns
+        -------
+        tipo
+            Descripción de los valores que devuelve
+        """
         return self.ID
 
     def get_grams_price(self) -> float:
@@ -50,8 +64,12 @@ class Package(ABC):
 
     @abstractmethod
     def calculate(self) -> float:
+        """
+
+        :return:
+        """
         return (self.weight / 1000) * self.GRAMS_PRICE
     
     @abstractmethod
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Id: {self.ID}, Code: {self.code}, Weight: {self.weight}, Description: {self.description}, Customer: {self.customer.name} {self.customer.last_name}"

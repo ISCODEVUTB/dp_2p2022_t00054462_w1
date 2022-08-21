@@ -18,7 +18,7 @@ class Position:
     def set_longitude(self, longitude: float) -> None:
         self.longitude = longitude
 
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Latitude: {self.latitude}, Longitude: {self.longitude}"
 
     

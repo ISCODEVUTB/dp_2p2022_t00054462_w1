@@ -66,5 +66,5 @@ class Person(ABC):
         return ("User identity is valid")
 
     @abstractmethod
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Id: {self.ID}, Name: {self.name}, Last name: {self.last_name}, Email: {self.email}, Document type: {self.document_type}, National id: {self.national_id}, Person type: {self.person_type}"

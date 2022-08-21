@@ -52,5 +52,5 @@ class Delivery:
     def set_position(self, position: Position) -> None:
         self.position = position
 
-    def toString(self) -> str:
+    def to_string(self) -> str:
         return f"Status: {self.status}, Track id: {self.track.ID}, Driver: {self.driver.name} {self.last_name}, Position: {self.position.latitude} - {self.position.longitude}"
